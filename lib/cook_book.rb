@@ -1,7 +1,7 @@
 class CookBook
-
+  attr_reader :recipes
   def initialize
-
-  end 
+    @recipes = []
+  end
 
 end

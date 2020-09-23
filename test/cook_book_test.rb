@@ -13,4 +13,9 @@ class CookBookTest < Minitest::Test
     assert_instance_of CookBook, cookbook
   end
 
+  def test_starts_with_no_recipes
+    cookbook = CookBook.new
+
+    assert_equal [], cookbook.recipes
+  end
 end
